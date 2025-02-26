@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Mood Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>EMOJI MOOD BOARD</h1>
+    <div class="top-section">
+        <div class="emoji-display" id="selected-emoji">😊</div>
+        <div class="history">
+            <h2>HISTORY</h2>
+            <table id="emoji-history">
+                <thead>
+                    <tr>
+                        <th>Emoji</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- History rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="emoji-container">
+        <div class="emoji-item">
+            <span>😊</span>
+            <button onclick="selectEmoji('😊')">Select</button>
+        </div>
+        <div class="emoji-item">
+            <span>😢</span>
+            <button onclick="selectEmoji('😢')">Select</button>
+        </div>
+        <div class="emoji-item">
+            <span>😂</span>
+            <button onclick="selectEmoji('😂')">Select</button>
+        </div>
+        <div class="emoji-item">
+            <span>😡</span>
+            <button onclick="selectEmoji('😡')">Select</button>
+        </div>
+        <!-- Add more emoji items here to make up to 12 emojis -->
+    </div>
+    <div class="bottom-section">
+        <button class="submit-btn" onclick="submitEmojis()">Submit ✔️</button>
+        <button class="reset-btn" onclick="resetEmojis()">Reset 🔄</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

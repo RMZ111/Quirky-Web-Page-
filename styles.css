@@ -1,0 +1,109 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffebcd;
+    border-radius: 10px;
+}
+
+.emoji-display {
+    flex: 1;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.history {
+    flex: 1;
+    text-align: right;
+    font-size: 1rem;
+    color: #696969;
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history th, .history td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.history th {
+    background-color: #f2f2f2;
+}
+
+.emoji-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.emoji-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe4e1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-item span {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.emoji-item button {
+    background-color: #add8e6;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.emoji-item button:hover {
+    background-color: #87ceeb;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.submit-btn, .reset-btn {
+    background-color: #20b2aa;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+    background-color: #66cdaa;
+}
