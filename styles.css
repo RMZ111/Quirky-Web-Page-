@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: 'Comic Sans MS', sans-serif;
     display: flex;
@@ -96,7 +97,7 @@ h1 {
 }
 
 .submit-btn, .reset-btn {
-    background-color: #20b2aa;
+    background-color: #8c9101;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -105,5 +106,5 @@ h1 {
 }
 
 .submit-btn:hover, .reset-btn:hover {
-    background-color: #66cdaa;
+    background-color: #00ff6a;
 }
