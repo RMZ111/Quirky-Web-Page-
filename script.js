@@ -1,4 +1,3 @@
-// script.js
 function selectEmoji(emoji) {
     document.getElementById('selected-emoji').innerText = emoji;
     changeBackgroundColor(emoji);
@@ -26,14 +25,14 @@ function resetEmojis() {
 
 function changeBackgroundColor(emoji) {
     const colors = {
-        '😊': '#ffed63',
-        '😢': '#064f8a',
-        '😂': '#63ffce',
-        '😡': '#ff5e4f',
-        '😲': '#ffb60a',
-        '😍': '#ffc4f9',
-        '😎': '#6eb356',
-        '🤩': '#700751'
+        '😊': 'lightyellow',
+        '😢': 'lightblue',
+        '😂': 'lightgreen',
+        '😡': 'lightcoral',
+        '😲': 'lightgray',
+        '😍': 'lightpink',
+        '😎': 'lightgoldenrodyellow',
+        '🤩': 'lightpurple'
     };
     document.body.style.backgroundColor = colors[emoji] || '#f0f8ff';
 }
