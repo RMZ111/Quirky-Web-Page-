@@ -1,5 +1,7 @@
+// script.js
 function selectEmoji(emoji) {
     document.getElementById('selected-emoji').innerText = emoji;
+    changeBackgroundColor(emoji);
 }
 
 function submitEmojis() {
@@ -20,4 +22,18 @@ function resetEmojis() {
     document.getElementById('selected-emoji').innerText = '';
     const historyTable = document.getElementById('emoji-history').querySelector('tbody');
     historyTable.innerHTML = '';
+}
+
+function changeBackgroundColor(emoji) {
+    const colors = {
+        '😊': '#ffed63',
+        '😢': '#064f8a',
+        '😂': '#63ffce',
+        '😡': '#ff5e4f',
+        '😲': '#ffb60a',
+        '😍': '#ffc4f9',
+        '😎': '#6eb356',
+        '🤩': '#700751'
+    };
+    document.body.style.backgroundColor = colors[emoji] || '#f0f8ff';
 }
